@@ -29,12 +29,9 @@ public:
         {
             for(int j = i + 1; j < vec.size(); ++j)
             {
-                // cout << vec[i] << " " << vec[j] << ": " << (vec[i] & vec[j]) << endl;
                 if((vec[i] & vec[j]) == 0)
                 {
                     int Union = words[i].length() * words[j].length();
-
-                    // cout << words[i] << " " << words[j] << ": " << Union << endl;
                     if(Union > Ans)
                         Ans = Union;
                 }
