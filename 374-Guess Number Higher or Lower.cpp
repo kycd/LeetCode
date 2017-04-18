@@ -6,10 +6,10 @@ int guess(int num);
 class Solution {
 		private:
 				int guessNumber(int min, int max) {
-						int mid = (min + max) / 2;
+						int mid = ((unsigned int) min + max) / 2;
 						int guessResult = guess(mid);
 
-						cout << "( " << min << ", " << mid << " ," << max << ") = " << guessResult << endl;
+						// cout << "( " << min << ", " << mid << " ," << max << ") = " << guessResult << endl;
 						switch(guessResult) {
 								case -1:
 										return guessNumber(min, mid - 1);
